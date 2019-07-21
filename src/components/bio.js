@@ -54,8 +54,8 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by <strong>{author}</strong> who lives and works in San
-        Francisco building useful things.
+        Written by <strong>{author}</strong> a freelancer who lives and works in
+        Nottingham, UK
         {` `}
         <a href={`https://twitter.com/${social.twitter}`}>
           You should follow him on Twitter
