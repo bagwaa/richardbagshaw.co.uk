@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    title: `Richard Bagshaw`,
+    author: `Richard Bagshaw`,
+    description: `developer | nerd | code hacker`,
+    siteUrl: `https://richardbagshaw.netlify.com/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `bagwaa`,
     },
   },
   plugins: [
@@ -50,15 +50,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-78853009-1`,
       },
     },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Richard Bagshaw Blog`,
+        short_name: `Richard Bagshaw`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
