@@ -97,66 +97,67 @@ The structure for the tables are as follows
 
 **Users table**
 
-<hr>
 <table style="border: 1px solid #c8c8c8; font-size: 13px; font-family: Consolas, monospace">
-    <thead>
-        <tr style="font-weight: bold">
-            <td style="border: 1px solid #c8c8c8; text-align: center">id</td>
-            <td style="border: 1px solid #c8c8c8; text-align: center">username</td>
-            <td style="border: 1px solid #c8c8c8; text-align: center">password</td>
-            <td style="border: 1px solid #c8c8c8; text-align: center">email</td>
-            <td style="border: 1px solid #c8c8c8; text-align: center">userable_id</td>
-            <td style="border: 1px solid #c8c8c8; text-align: center">userable_type</td>
-        </tr>
-    </thead>
     <tbody>
         <tr>
-            <td style="border: 1px solid #c8c8c8; text-align: center">auto-inc</td>
-            <td style="border: 1px solid #c8c8c8; text-align: center">string</td>
-            <td style="border: 1px solid #c8c8c8; text-align: center">hashed string</td>
-            <td style="border: 1px solid #c8c8c8; text-align: center">string</td>
-            <td style="border: 1px solid #c8c8c8; text-align: center">integer</td>
-            <td style="border: 1px solid #c8c8c8; text-align: center">string</td>
+            <td class="font-bold border text-center">id</td>
+            <td class="border text-center">auto-increment</td>
+        </tr>
+        <tr>
+            <td class="font-bold border text-center">username</td>
+            <td class="border text-center">string</td>
+        </tr>
+        <tr>
+            <td class="font-bold border text-center">password</td>
+            <td class="border text-center">hashed string</td>
+        </tr>
+        <tr>
+            <td class="font-bold border text-center">email</td>
+            <td class="border text-center">string</td>
+        </tr>
+        <tr>
+            <td class="font-bold border text-center">userable_id</td>
+            <td class="border text-center">integer</td>
+        </tr>
+        <tr>
+            <td class="font-bold border text-center">userable_type</td>
+            <td class="border text-center">string</td>
         </tr>
     </tbody>
 </table>
 
-The userable_id and userable_type reference the model and the id for each association, so if a row in this table contained the userable_id of 1 and userable_type of Freelancer then this would then create a polymorphic relationship from the users table to the freelancers table on that foreign key.
+The userable id and userable type reference the model and the id for each association, so if a row in this table contained the userable_id of 1 and userable_type of Freelancer then this would then create a polymorphic relationship from the users table to the freelancers table on that foreign key.
 
 **Employees table**
 
-<hr>
 <table style="border: 1px solid #c8c8c8; font-size: 13px; font-family: Consolas, monospace">
-    <thead>
-        <tr style="font-weight: bold">
-            <td style="border: 1px solid #c8c8c8; text-align: center">id</td>
-            <td style="border: 1px solid #c8c8c8; text-align: center">salary</td>
-            <td style="border: 1px solid #c8c8c8; text-align: center">employee_number</td>
-        </tr>
-    </thead>
     <tbody>
         <tr>
-            <td style="border: 1px solid #c8c8c8; text-align: center">auto-inc</td>
-            <td style="border: 1px solid #c8c8c8; text-align: center">integer</td>
-            <td style="border: 1px solid #c8c8c8; text-align: center">string</td>
+            <td class="font-bold border text-center">id</td>
+            <td class="border text-center">auto-increment</td>
+        </tr>
+        <tr>
+            <td class="font-bold border text-center">salary</td>
+            <td class="border text-center">integer</td>
+        </tr>
+        <tr>
+            <td class="font-bold border text-center">employee_number</td>
+            <td class="border text-center">string</td>
         </tr>
     </tbody>
 </table>
 
 **Freelancers table**
 
-<hr>
 <table style="border: 1px solid #c8c8c8; font-size: 13px; font-family: Consolas, monospace">
-    <thead>
-        <tr style="font-weight: bold">
-            <td style="border: 1px solid #c8c8c8; text-align: center">id</td>
-            <td style="border: 1px solid #c8c8c8; text-align: center">day_rate</td>
-        </tr>
-    </thead>
     <tbody>
         <tr>
-            <td style="border: 1px solid #c8c8c8; text-align: center">auto-inc</td>
-            <td style="border: 1px solid #c8c8c8; text-align: center">integer</td>
+            <td class="font-bold border text-center">id</td>
+            <td class="border text-center">auto-increment</td>
+        </tr>
+        <tr>
+            <td class="font-bold border text-center">day_rate</td>
+            <td class="border text-center">integer</td>
         </tr>
     </tbody>
 </table>

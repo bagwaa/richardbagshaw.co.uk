@@ -3,14 +3,14 @@
 @tailwind components;
 
 .blog-content p {
-  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .blog-content h2 {
   font-size: 24px;
   font-weight: 700;
   font-family: "open-sans", "arial";
-  padding: 1.5rem 0 0.5rem;
+  padding: 1.5rem 0;
   color: #4a5568;
 }
 
@@ -21,7 +21,7 @@
 .blog-content ol {
   display: block;
   list-style-type: decimal;
-  padding-left: 40px;
+  padding-left: 20px;
   margin-top: 1em;
   margin-bottom: 1em;
   margin-left: 0;
@@ -31,7 +31,7 @@
 .blog-content ul {
   display: block;
   list-style-type: disc;
-  padding-left: 40px;
+  padding-left: 20px;
   margin-top: 1em;
   margin-bottom: 1em;
   margin-left: 0;

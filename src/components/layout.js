@@ -19,7 +19,7 @@ class Layout extends React.Component {
       header = (
         <h3>
           <Link
-            className="bg-red-500 text-white py-2 px-4 uppercase font-opensans text-sm font-semibold hover:bg-gray-800"
+            className="font-os bg-red-500 text-white py-1 px-4 uppercase text-sm font-semibold hover:bg-gray-800"
             to={`/`}
           >
             {title}
@@ -35,10 +35,10 @@ class Layout extends React.Component {
             rel="stylesheet"
           />
         </Helmet>
-        <header className="pt-16 text-center pb-12">{header}</header>
+        <header className="py-12 text-center">{header}</header>
         <main>{children}</main>
-        <footer className="flex justify-center items-center h-24 pt-20 pb-20 bg-gray-900">
-          <span className="font-opensans text-gray-500 ">
+        <footer className="flex justify-center items-center h-64 bg-gray-900">
+          <span className="font-os text-gray-500">
             © {new Date().getFullYear()} Built by{" "}
             <a href="https://twitter.com/bagwaa">@bagwaa</a> using
             {` `}

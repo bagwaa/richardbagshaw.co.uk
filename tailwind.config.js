@@ -1,7 +1,7 @@
 module.exports = {
   theme: {
     fontFamily: {
-      opensans: ["Open Sans", "arial"],
+      os: ["Open Sans", "arial"],
     },
     extend: {},
   },
