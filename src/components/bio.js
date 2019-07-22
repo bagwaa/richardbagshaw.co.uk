@@ -32,15 +32,16 @@ const Bio = () => {
 
   const { author, social } = data.site.siteMetadata
   return (
-    <div>
+    <div className="flex mb-8 border p-6 rounded-lg bg-gray-100">
       <Image
         fixed={data.avatar.childImageSharp.fixed}
         alt={author}
         imgStyle={{
           borderRadius: `50%`,
         }}
+        className="mr-4"
       />
-      <p>
+      <p className="font-opensans">
         Written by <strong>{author}</strong> a freelancer who lives and works in
         Nottingham, UK
         {` `}

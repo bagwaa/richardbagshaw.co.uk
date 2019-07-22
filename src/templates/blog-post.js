@@ -21,7 +21,7 @@ class BlogPostTemplate extends React.Component {
         <div></div>
 
         <div className="flex">
-          <div className="container mx-auto mt-6 px-5">
+          <div className="container mx-auto mt-6 md:px-20">
             <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes} />
 
             <h1 className="text-center text-5xl font-bold text-gray-700 pt-6 leading-snug font-opensans tracking-wide">
@@ -63,8 +63,10 @@ class BlogPostTemplate extends React.Component {
             </ul>
 
             <Bio />
-
-            <h1>Comments Here</h1>
+            <div>
+              <div id="commento"></div>
+              <script src="https://cdn.commento.io/js/commento.js"></script>
+            </div>
           </div>
         </div>
       </Layout>
