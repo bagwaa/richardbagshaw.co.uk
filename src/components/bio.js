@@ -44,9 +44,9 @@ const Bio = () => {
         />
       </div>
 
-      <p className="font-opensans">
-        Written by <strong>{author}</strong> a freelancer who lives and works in
-        Nottingham, UK
+      <p className="font-os">
+        Written by <strong>{author}</strong> a php, javascript, vue and react
+        freelancer who lives and works in Nottingham, UK.
         {` `}
         <a href={`https://twitter.com/${social.twitter}`}>
           Follow me on Twitter
