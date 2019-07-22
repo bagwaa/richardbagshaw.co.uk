@@ -1,6 +1,8 @@
 ---
 title: My Second Post!
 date: "2015-05-06T23:46:37.121Z"
+featuredImage: "./header.png"
+author: "Richard Bagshaw"
 ---
 
 Wow! I love blogging so much already.

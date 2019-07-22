@@ -1,7 +1,10 @@
 module.exports = {
   theme: {
-    extend: {}
+    fontFamily: {
+      opensans: ["Open Sans", "arial"],
+    },
+    extend: {},
   },
   variants: {},
-  plugins: []
+  plugins: [],
 }

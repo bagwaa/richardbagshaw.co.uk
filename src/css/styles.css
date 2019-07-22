@@ -2,4 +2,16 @@
 
 @tailwind components;
 
+.blog-content p {
+  padding-top: 1rem;
+}
+
+.blog-content h2 {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "open-sans", "arial";
+  padding: 1.5rem 0 0.5rem;
+  color: #4a5568;
+}
+
 @tailwind utilities;

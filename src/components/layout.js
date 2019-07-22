@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import "../css/styles.css"
+import { Helmet } from "react-helmet"
 
 class Layout extends React.Component {
   render() {
@@ -17,13 +18,24 @@ class Layout extends React.Component {
     } else {
       header = (
         <h3>
-          <Link to={`/`}>{title}</Link>
+          <Link
+            className="bg-red-500 text-white py-2 px-4 uppercase font-opensans text-sm font-semibold hover:bg-gray-800"
+            to={`/`}
+          >
+            {title}
+          </Link>
         </h3>
       )
     }
     return (
       <div>
-        <header>{header}</header>
+        <Helmet>
+          <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans"
+            rel="stylesheet"
+          />
+        </Helmet>
+        <header className="pt-16 text-center pb-12">{header}</header>
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with

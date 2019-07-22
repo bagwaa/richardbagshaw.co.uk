@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import Img from "gatsby-image"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -17,30 +18,55 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <h1 className="text-center text-4xl bg-red-300">
-          {post.frontmatter.title}
-        </h1>
-        <p>{post.frontmatter.date}</p>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr />
-        <Bio />
+        <div></div>
 
-        <ul>
-          <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
+        <div className="flex">
+          <div className="container mx-auto mt-6 px-5">
+            <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes} />
+
+            <h1 className="text-center text-5xl font-bold text-gray-700 pt-6 leading-snug font-opensans tracking-wide">
+              {post.frontmatter.title}
+            </h1>
+
+            <p className="text-center font-semibold uppercase font-opensans text-sm text-gray-500 py-6 tracking-wide">
+              Published {post.frontmatter.date} By {post.frontmatter.author}
+            </p>
+
+            <div
+              className="blog-content font-opensans text-lg text-gray-700 leading-relaxed"
+              dangerouslySetInnerHTML={{ __html: post.html }}
+            />
+
+            <ul className="flex justify-between py-8 font-opensans text-blue-700 font-bold">
+              <li>
+                {previous && (
+                  <Link
+                    to={previous.fields.slug}
+                    className="shadow-none"
+                    rel="prev"
+                  >
+                    ← {previous.frontmatter.title}
+                  </Link>
+                )}
+              </li>
+              <li>
+                {next && (
+                  <Link
+                    to={next.fields.slug}
+                    className="shadow-none"
+                    rel="next"
+                  >
+                    {next.frontmatter.title} →
+                  </Link>
+                )}
+              </li>
+            </ul>
+
+            <Bio />
+
+            <h1>Comments Here</h1>
+          </div>
+        </div>
       </Layout>
     )
   }
@@ -64,6 +90,14 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        author
+        featuredImage {
+          childImageSharp {
+            sizes(maxWidth: 800) {
+              ...GatsbyImageSharpSizes
+            }
+          }
+        }
       }
     }
   }
