@@ -14,4 +14,38 @@
   color: #4a5568;
 }
 
+.blog-content p > a {
+  color: blue;
+}
+
+.blog-content ol {
+  display: block;
+  list-style-type: decimal;
+  padding-left: 40px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.blog-content ul {
+  display: block;
+  list-style-type: disc;
+  padding-left: 40px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.blog-content blockquote > p {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem !important;
+  padding-top: 0px !important;
+}
+
+.blog-content .gatsby-highlight {
+  margin: 2rem 0;
+}
+
 @tailwind utilities;
