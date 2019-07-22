@@ -37,10 +37,12 @@ class Layout extends React.Component {
         </Helmet>
         <header className="pt-16 text-center pb-12">{header}</header>
         <main>{children}</main>
-        <footer className="text-center pb-8 font-opensans text-gray-600">
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <footer className="flex">
+          <div className="min-w-full text-center pb-8 font-opensans text-gray-600 bg-gray-900 h-24">
+            © {new Date().getFullYear()}, Built with
+            {` `}
+            <a href="https://www.gatsbyjs.org">Gatsby</a>
+          </div>
         </footer>
       </div>
     )
