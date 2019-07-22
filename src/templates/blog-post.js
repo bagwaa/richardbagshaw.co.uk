@@ -33,7 +33,7 @@ class BlogPostTemplate extends React.Component {
             </p>
 
             <div
-              className="blog-content font-os text-base text-gray-700 leading-relaxed px-3"
+              className="blog-content font-os text-base lg:text-lg text-gray-700 leading-relaxed px-3"
               dangerouslySetInnerHTML={{ __html: post.html }}
             />
 
