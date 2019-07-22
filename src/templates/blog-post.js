@@ -21,7 +21,7 @@ class BlogPostTemplate extends React.Component {
         <div></div>
 
         <div className="flex">
-          <div className="container mx-auto mt-6 md:px-20">
+          <div className="container mx-auto mt-6 px-1 md:w-full lg:w-3/4 xl:w-2/6">
             <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes} />
 
             <h1 className="text-center text-2xl sm:text-3xl md:text-5xl font-bold text-gray-700 pt-6 leading-snug font-opensans tracking-wide">
@@ -63,7 +63,9 @@ class BlogPostTemplate extends React.Component {
             </ul>
 
             <Bio />
-            <Comments />
+            <div className="mt-8 py-10">
+              <Comments />
+            </div>
           </div>
         </div>
       </Layout>
