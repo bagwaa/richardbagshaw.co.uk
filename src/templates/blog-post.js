@@ -21,10 +21,10 @@ class BlogPostTemplate extends React.Component {
         <div></div>
 
         <div className="flex">
-          <div className="container mx-auto">
+          <div className="container lg:max-w-4xl mx-auto">
             <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes} />
 
-            <h1 className="text-center text-2xl font-bold text-gray-700 pt-6 leading-snug font-os tracking-wide">
+            <h1 className="text-center text-2xl md:text-4xl lg:text-5xl font-bold text-gray-700 pt-6 leading-snug font-os tracking-wide">
               {post.frontmatter.title}
             </h1>
 
