@@ -42,7 +42,9 @@ class Layout extends React.Component {
             © {new Date().getFullYear()} Built by{" "}
             <a href="https://twitter.com/bagwaa">@bagwaa</a> using
             {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
+            <a href="https://www.gatsbyjs.org">Gatsby</a> and
+            {` `}
+            <a href="https://tailwindcss.com/">Tailwind CSS</a> ❤️
           </span>
         </footer>
       </div>
