@@ -24,7 +24,7 @@ class BlogPostTemplate extends React.Component {
           <div className="container lg:max-w-4xl mx-auto">
             <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes} />
 
-            <h1 className="text-center text-2xl md:text-4xl lg:text-5xl font-bold text-gray-700 pt-6 leading-snug font-os tracking-wide">
+            <h1 className="text-center text-4xl md:text-5xl font-medium text-gray-700 pt-6 leading-snug font-os tracking-wide">
               {post.frontmatter.title}
             </h1>
 
@@ -33,7 +33,7 @@ class BlogPostTemplate extends React.Component {
             </p>
 
             <div
-              className="blog-content font-os text-base lg:text-lg text-gray-700 leading-relaxed px-3"
+              className="blog-content font-os text-lg text-gray-700 leading-relaxed px-3"
               dangerouslySetInnerHTML={{ __html: post.html }}
             />
 
