@@ -30,7 +30,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
+              maxWidth: 1000,
             },
           },
           {
@@ -41,6 +41,12 @@ module.exports = {
               height: 400, // Optional: Overrides optional.ratio
               related: true, //Optional: Will remove related videos from the end of an embedded YouTube video.
               noIframeBorder: true, //Optional: Disable insertion of <style> border: 0
+            },
+          },
+          {
+            resolve: "@weknow/gatsby-remark-twitter",
+            options: {
+              debug: false,
             },
           },
           {
