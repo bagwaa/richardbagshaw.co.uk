@@ -17,7 +17,7 @@ class BlogIndex extends React.Component {
         <div className="flex">
           <div className="container lg:max-w-4xl mx-auto">
             <div className="w-full bg-gray-100 p-6 rounded-lg shadow">
-              <h2 className="font-os font-extrabold text-5xl tracking-wide text-gray-800">
+              <h2 className="font-os font-extrabold text-3xl md:text-5xl tracking-wide text-gray-800">
                 Hi, I'm Richard.
               </h2>
               <p className="inline-block font-os text-lg tracking-wide pt-6 pl-1 text-gray-800 w-full text-justify">
