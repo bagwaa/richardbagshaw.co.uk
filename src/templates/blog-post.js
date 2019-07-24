@@ -36,7 +36,7 @@ class BlogPostTemplate extends React.Component {
               dangerouslySetInnerHTML={{ __html: post.html }}
             />
 
-            <ul className="flex justify-between py-8 font-os text-blue-700 font-bold">
+            <ul className="flex justify-around py-8 font-os text-blue-700 font-bold">
               <li>
                 {previous && (
                   <Link
@@ -44,7 +44,7 @@ class BlogPostTemplate extends React.Component {
                     className="shadow-none"
                     rel="prev"
                   >
-                    ← {previous.frontmatter.title}
+                    ← Prev
                   </Link>
                 )}
               </li>
@@ -55,7 +55,7 @@ class BlogPostTemplate extends React.Component {
                     className="shadow-none"
                     rel="next"
                   >
-                    {next.frontmatter.title} →
+                    Next →
                   </Link>
                 )}
               </li>
