@@ -64,7 +64,15 @@ class BlogPostTemplate extends React.Component {
             </ul>
             <Bio />
             <div className="signup min-w-full font-os p-8 rounded bg-gray-100 border">
-              <form name="contact" method="POST" data-netlify="true">
+              <form
+                name="newsletter"
+                method="POST"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+                action="/success"
+              >
+                <input type="hidden" name="bot-field" />
+                <input type="hidden" name="form-name" value="newsletter" />
                 <h2 className="font-os text-2xl text-gray-700 font-semibold tracking-wide">
                   Join the Newsletter
                 </h2>
