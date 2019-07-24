@@ -29,7 +29,7 @@ class Layout extends React.Component {
         </Helmet>
         <header className="py-12 text-center">{header}</header>
         <main>{children}</main>
-        <footer className="flex justify-center items-center h-64 bg-gray-900">
+        <footer className="flex justify-center items-center h-64 mt-6 bg-gray-900">
           <span className="font-os text-gray-500 text-center">
             © {new Date().getFullYear()} Built by{" "}
             <a href="https://twitter.com/bagwaa">@bagwaa</a> using
