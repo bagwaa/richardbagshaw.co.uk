@@ -4,6 +4,7 @@ date: "2019-07-17T09:00:01.197Z"
 description: When scoped slots were first introduced to Vue.js I found them quite challenging to fully understand, not so much the syntax but mostly around when and why I would use them.
 featuredImage: "./header.png"
 author: "Richard Bagshaw"
+gitHubPageLink: "https://github.com/bagwaa/richardbagshaw.co.uk/blob/master/content/blog/vue-js-scoped-slots/index.md"
 ---
 
 When scoped slots were first introduced to [Vue.js](https://vuejs.org/) I found them quite challenging to fully understand, not so much the syntax but mostly around when and why I would use them.

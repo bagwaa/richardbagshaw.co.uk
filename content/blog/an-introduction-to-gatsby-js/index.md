@@ -4,6 +4,7 @@ date: "2019-07-11T14:01:13.129Z"
 description: At a very basic level Gatsby is a site / app generator which aims to solve all the above problems by having sensible defaults out of the box, however it is a little more than that.
 featuredImage: "./header.jpg"
 author: "Richard Bagshaw"
+gitHubPageLink: "https://github.com/bagwaa/richardbagshaw.co.uk/blob/master/content/blog/an-introduction-to-gatsby-js/index.md"
 ---
 
 Modern web development is not something that can be picked up particularly quickly, in the current climate of web development there are just a tonne of things we need to learn as developers and this cycle of learning is a big part of every developers life.

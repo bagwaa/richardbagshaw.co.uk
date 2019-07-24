@@ -25,20 +25,19 @@ class BlogPostTemplate extends React.Component {
         <div className="flex">
           <div className="container lg:max-w-4xl mx-auto">
             <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes} />
-
             <h1 className="text-center text-4xl md:text-5xl font-medium text-gray-700 pt-6 leading-snug font-os tracking-wide">
               {post.frontmatter.title}
             </h1>
-
             <p className="text-center font-semibold uppercase font-os text-sm text-gray-500 py-6 tracking-wide">
-              Published {post.frontmatter.date} By {post.frontmatter.author}
+              Published {post.frontmatter.date} By {post.frontmatter.author} -{" "}
+              <a className="capitalize" href={post.frontmatter.gitHubPageLink}>
+                Edit page on Github
+              </a>
             </p>
-
             <div
               className="blog-content font-os text-lg text-gray-700 leading-relaxed px-3"
               dangerouslySetInnerHTML={{ __html: post.html }}
             />
-
             <ul className="flex justify-around py-8 font-os text-blue-700 font-bold">
               <li>
                 {previous && (
@@ -63,7 +62,6 @@ class BlogPostTemplate extends React.Component {
                 )}
               </li>
             </ul>
-
             <Bio />
             <div className="mt-8 py-10">
               <Comments />
@@ -114,6 +112,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         author
+        gitHubPageLink
         featuredImage {
           childImageSharp {
             sizes(maxWidth: 800) {

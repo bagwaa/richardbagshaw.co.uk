@@ -4,6 +4,7 @@ date: "2019-07-16T17:23:01.197Z"
 description: Learning a new language or scripting language can be a daunting task, however I think it's always good to have a reason as to why you're learning a particular skill.
 featuredImage: "./header.jpg"
 author: "Richard Bagshaw"
+gitHubPageLink: "https://github.com/bagwaa/richardbagshaw.co.uk/blob/master/content/blog/the-constant-learning-cycle/index.md"
 ---
 
 I've been writing code since around 1987 and one thing that has stuck with me all this time is my passion for learning. I remember when I was around 10 years old, I was learning C on the Amiga 500 and had recently purchased a copy of "North C Compiler" from my local [public domain library](http://www.nostalgianerd.com/pd-software).
