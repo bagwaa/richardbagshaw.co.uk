@@ -17,6 +17,9 @@ class BlogPostTemplate extends React.Component {
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
+          image={post.frontmatter.featuredImage.childImageSharp.sizes.src}
+          siteUrl={this.props.location.origin}
+          postUrl={this.props.location.href}
         />
 
         <div className="flex">
