@@ -38,13 +38,14 @@ class Layout extends React.Component {
         <header className="py-12 text-center">{header}</header>
         <main>{children}</main>
         <footer className="flex justify-center items-center h-64 bg-gray-900">
-          <span className="font-os text-gray-500">
+          <span className="font-os text-gray-500 text-center">
             © {new Date().getFullYear()} Built by{" "}
             <a href="https://twitter.com/bagwaa">@bagwaa</a> using
             {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a> and
+            <a href="https://www.gatsbyjs.org">Gatsby</a>
             {` `}
-            <a href="https://tailwindcss.com/">Tailwind CSS</a> ❤️
+            <br />
+            and <a href="https://tailwindcss.com/">Tailwind CSS</a> ❤️
           </span>
         </footer>
       </div>
