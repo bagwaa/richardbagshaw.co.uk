@@ -63,6 +63,40 @@ class BlogPostTemplate extends React.Component {
               </li>
             </ul>
             <Bio />
+            <div className="signup min-w-full font-os p-8 rounded bg-gray-100 border">
+              <form name="contact" method="POST" data-netlify="true">
+                <h2 className="font-os text-2xl text-gray-700 font-semibold tracking-wide">
+                  Join the Newsletter
+                </h2>
+                <p className="font-os text-lg text-gray-800 leading-relaxed py-6">
+                  I write about PHP, JavaScript frameworks such as React and
+                  Vue, and programming in general, Keep up with my content and
+                  unsubscribe whenever.
+                  <span className="text-red-700 font-bold italic">
+                    Never any spam
+                  </span>
+                  ,{" "}
+                  <span className="text-green-700 font-bold italic">
+                    only useful content
+                  </span>
+                  .
+                </p>
+                <p>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email address"
+                    className="shadow appearance-none border rounded w-1/2 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  />
+                  <button
+                    className="bg-blue-500 ml-2 w-24 hover:bg-blue-700 text-white text-sm font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    type="submit"
+                  >
+                    Submit
+                  </button>
+                </p>
+              </form>
+            </div>
             <div className="mt-8 py-10">
               <Comments />
             </div>
