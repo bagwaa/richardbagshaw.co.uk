@@ -34,6 +34,7 @@ class BlogPostTemplate extends React.Component {
                 Edit page on Github
               </a>
             </p>
+            <Bio />
             <div
               className="blog-content font-os text-lg text-gray-700 leading-relaxed px-3"
               dangerouslySetInnerHTML={{ __html: post.html }}
