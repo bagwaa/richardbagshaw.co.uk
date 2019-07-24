@@ -18,7 +18,6 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <div></div>
 
         <div className="flex">
           <div className="container lg:max-w-4xl mx-auto">

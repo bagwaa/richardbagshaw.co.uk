@@ -1,7 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -14,23 +13,31 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
-        <Bio />
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <div key={node.fields.slug}>
-              <h3>
-                <Link to={node.fields.slug}>{title}</Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
-            </div>
-          )
-        })}
+
+        <div className="flex">
+          <div className="container lg:max-w-4xl mx-auto">
+            {posts.map(({ node }) => {
+              const title = node.frontmatter.title || node.fields.slug
+              return (
+                <div key={node.fields.slug}>
+                  <div className="text-center">
+                    <h3 className="text-center mb-8 text-4xl md:text-5xl font-medium text-gray-700 pt-6 leading-snug font-os tracking-wide">
+                      <Link to={node.fields.slug}>{title}</Link>
+                    </h3>
+                  </div>
+                  <div>
+                    <div className="text-center font-semibold uppercase font-os text-lg text-gray-500 py-6 tracking-wide">
+                      <small>
+                        Published on {node.frontmatter.date} by{" "}
+                        {node.frontmatter.author}
+                      </small>
+                    </div>
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+        </div>
       </Layout>
     )
   }
@@ -56,6 +63,14 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            author
+            featuredImage {
+              childImageSharp {
+                sizes(maxWidth: 800) {
+                  ...GatsbyImageSharpSizes
+                }
+              }
+            }
           }
         }
       }
