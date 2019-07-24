@@ -14,6 +14,15 @@
   color: #4a5568;
 }
 
+.blog-content .gatsby-highlight {
+  font-size: 0.85rem;
+}
+
+.blog-content .language-text {
+  background-color: white;
+  color: red;
+}
+
 .blog-content p > a {
   color: blue;
 }
