@@ -22,7 +22,7 @@ class BlogPostTemplate extends React.Component {
           postUrl={this.props.location.href}
         />
 
-        <div className="flex">
+        <div className="flex m-4">
           <div className="container lg:max-w-4xl mx-auto">
             <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes} />
             <h1 className="text-center text-4xl md:text-5xl font-medium text-gray-700 pt-6 leading-snug font-os tracking-wide">

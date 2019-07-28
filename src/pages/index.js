@@ -42,7 +42,7 @@ class BlogIndex extends React.Component {
                   <div className="text-center">
                     <h3 className="text-center text-3xl md:text-4xl font-medium text-gray-700 pt-8 leading-snug font-os tracking-wide">
                       <Link
-                        className="shadow-none hover:text-blue-600"
+                        className="shadow-none hover:text-red-600"
                         to={node.fields.slug}
                       >
                         {title}
@@ -50,11 +50,12 @@ class BlogIndex extends React.Component {
                     </h3>
                   </div>
                   <div>
-                    <div className="text-center font-semibold uppercase font-os text-lg text-gray-500 tracking-wide">
-                      <small>
-                        Published on {node.frontmatter.date} by{" "}
-                        {node.frontmatter.author}
-                      </small>
+                    <div className="text-center font-semibold font-os text-base text-gray-500 tracking-wide">
+                      <div>
+                        <small className="uppercase ">
+                          {node.frontmatter.date}
+                        </small>
+                      </div>
                     </div>
                   </div>
                 </div>
