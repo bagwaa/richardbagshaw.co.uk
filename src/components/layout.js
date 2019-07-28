@@ -26,6 +26,11 @@ class Layout extends React.Component {
             href="https://fonts.googleapis.com/css?family=Open+Sans"
             rel="stylesheet"
           />
+          <script>
+            var clicky_site_ids = clicky_site_ids || [];
+            clicky_site_ids.push(101184957);
+          </script>
+          <script async src="//static.getclicky.com/js"></script>
         </Helmet>
         <header className="py-12 text-center">{header}</header>
         <main>{children}</main>
