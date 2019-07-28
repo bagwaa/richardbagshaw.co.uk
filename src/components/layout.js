@@ -28,7 +28,7 @@ class Layout extends React.Component {
           />
           <script>
             var clicky_site_ids = clicky_site_ids || [];
-            clicky_site_ids.push(101184957);
+            clicky_site_ids.push(101198792);
           </script>
           <script async src="//static.getclicky.com/js"></script>
         </Helmet>
