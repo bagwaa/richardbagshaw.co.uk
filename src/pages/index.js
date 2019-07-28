@@ -14,9 +14,9 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
 
-        <div className="flex">
+        <div className="flex m-4">
           <div className="container lg:max-w-4xl mx-auto">
-            <div className="w-full bg-gray-100 p-6 rounded-lg shadow">
+            <div className="w-full bg-gray-100 p-6 rounded-sm shadow">
               <h2 className="font-os font-extrabold text-3xl md:text-5xl tracking-wide text-gray-800">
                 Hi, I'm Richard.
               </h2>
@@ -40,7 +40,7 @@ class BlogIndex extends React.Component {
               return (
                 <div key={node.fields.slug}>
                   <div className="text-center">
-                    <h3 className="text-center mb-8 text-3xl md:text-4xl font-medium text-gray-700 pt-8 leading-snug font-os tracking-wide">
+                    <h3 className="text-center text-3xl md:text-4xl font-medium text-gray-700 pt-8 leading-snug font-os tracking-wide">
                       <Link
                         className="shadow-none hover:text-blue-600"
                         to={node.fields.slug}
