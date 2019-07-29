@@ -20,9 +20,9 @@ There are four ways to figure out what the `this` keyword is referencing within 
 
 ## What is binding?
 
-Binding in Javascript refers to the idea that we can bind our function calls to particular contexts, we can do this implicitly and just let Javascript do its thing for us, or we can be very explicit and let Javascript know exactly what we want the this keyword to reference.
+Binding in Javascript refers to the idea that we can bind our function calls to particular contexts, we can do this implicitly and just let Javascript do its thing for us, or we can be very explicit and let Javascript know exactly what we want the `this` keyword to reference.
 
-if that makes no sense, don't panic as I will be elaborating on this with some examples, let's take a look at the most basic example first.
+if that makes no sense, don't panic as I will be elaborating on each of these concepts with some examples, let's take a look at the most basic example first.
 
 ## Implicit Binding
 
@@ -77,13 +77,13 @@ const author = {
 sayName.call(author) // Outputs Richard
 ```
 
-In this example we start off by declaring a simple Javascript function, this function is not part of any object and as you can see the `this` keyword is used within this function.
+In this example we start off by declaring a simple Javascript function, this function is not part of any object and as you can see the `this` keyword is used within the function.
 
-We also have an author object which contains a `name` and an `age`.
+We also have an `author` object which contains a `name` and an `age`.
 
-If we were to call the `sayName()` function on its own it would throw an error, this is because within the function, the `this` keyword doesn't reference anything.
+If we were to call the `sayName()` function on its own it would throw an error because within the function, the `this` keyword doesn't reference anything.
 
-We can explicitly set what the `this` keyword points to by using the `call()` function.
+We can explicitly set what the `this` keyword points to by using the `call()` function. Using the `call()` function like this gives our `sayName()` function a context to work in and points `this` to `author`.
 
 ```javascript
 sayName.call(author) // Outputs Richard
@@ -106,13 +106,13 @@ const food = ["Pizza", "Tacos", "Lasagne"]
 sayName.call(author, food[0], food[1], food[2])
 ```
 
-As we were before, we are calling the `sayName()` function and using `call()` to provide the context in which we wish to call it, in this case `author`.
+As before, we are calling the `sayName()` function and using `call()` to provide the context in which we wish to call it, in this case `author`.
 
-We are then passing through three arguments which we are pulling from an array of food, as you can see these arguments are then passed into the `sayName()` function like regular arguments which will allow us to `console.log()` them out.
+We are then passing through three arguments which we are pulling from an array of `food`, as you can see these arguments are then passed into the `sayName()` function like regular arguments which will allow us to `console.log()` them out.
 
 ## Apply()
 
-One thing you might not like is the idea of passing all these individual food items in with the context, surely it would be better to just pass in the whole array?
+One thing you might not like is the idea of passing all these individual `food` items in with the context we wish to use, surely it would be better to just pass in the whole array?
 
 ```javascript
 const sayName = function(food1, food2, food3) {
@@ -129,11 +129,11 @@ const food = ["Pizza", "Tacos", "Lasagne"]
 sayName.apply(author, food)
 ```
 
-This is exactly what `apply()` does, it's the same as `call()` but instead of passing in the individual food items, we can just pass them in as a complete array and then calls the function.
+This is exactly what `apply()` does, it's the same as `call()` but instead of passing in the individual `food` items, we can just pass them in as a complete array and then call the function.
 
 ## Bind()
 
-The final way to explicitly bind is to use the bind function, `bind()` is almost identical to `call()` but with one difference, instead of calling the function right away, it simply returns a new function with the required binding, let's take a look at an example.
+The final way to explicitly bind is to use the `bind()` function, `bind()` is almost identical to `call()` but with one difference, instead of calling the function right away, it simply returns a new function with the required binding, let's take a look at an example.
 
 ```javascript
 const sayName = function(food1, food2, food3) {
@@ -152,11 +152,11 @@ const newFn = sayName.bind(author, food[0], food[1], food[2])
 newFn() // "Richard likes Pizza, Tacos, and Lasagne"
 ```
 
-As you can see, this works in exactly like `call()` except the function isn't called right away, in this case, the new function is assigned to a constant called `newFn` and we then invoke it on the line after. This particular type of binding is often seen in React components, but I will go into that a little more shortly.
+As you can see, this works in exactly like `call()` except the function isn't called right away, in this case, the new function is assigned to a constant called `newFn` and we then invoke it on the line after (we could invoke this at anytime we like). This particular type of binding is often seen in React components, but I will go into that a little more later.
 
 ## new Binding
 
-The `new` binding is a very simple one to explain, anytime you use the new keyword in Javascript, you are binding `this` to the new object you're creating, a quick example of this might look as follows.
+The `new` binding is a very simple one to explain, anytime you use the `new` keyword in Javascript, you are binding `this` to the new object you're creating, a quick example of this might look as follows.
 
 ```javascript
 const Book = function(title, author, isbn) {
@@ -170,7 +170,7 @@ const greatBook = new Book("Refactoring", "Martin Fowler", "0-201-48567-2")
 console.log(greatBook)
 ```
 
-The output of the above would be the new object we have created, which contains the title, author and ISBN which were set using the `this` keyword
+The output of the above would be the new object we have created, which contains the `title`, `author` and `ISBN` which were set using the `this` keyword
 
 ```json
 [object Object] {
@@ -182,7 +182,7 @@ The output of the above would be the new object we have created, which contains 
 
 ## Window binding 🤮
 
-The final binding I want to mention is `window` binding, I don't recommend using window binding as its essentially polluting the global scope, this can lead to bugs and all sorts of issues, but it's worth mentioning as it is still widely used.
+The final binding I want to mention is `window` binding, I don't recommend using window binding as its essentially polluting the global scope, this can lead to bugs and all sorts of issues, but it's worth mentioning as it is still widely used sadly.
 
 As always, let's look at an example.
 
@@ -208,7 +208,7 @@ sayName() // "Richard"
 
 In our React components, we often have to be explicit about our bindings, this is because at the time of invocation from within our JSX we have no idea what the context is, and since components can be reused everywhere by nature, it may not always be the same.
 
-Take a look at this example, at the end of the constructor you can see that we are explicitly binding our handle method to React component.
+Take a look at this example, at the end of the `constructor()` you can see that we are explicitly binding our `switchOff()` method to React component.
 
 ```javascript
 class App extends React.Component {
@@ -240,7 +240,7 @@ class App extends React.Component {
 ReactDOM.render(<App />, document.getElementById("app"))
 ```
 
-In the above example we have a simple React component, the most important line is where we `bind()` the `this` keyword to this particular component at the end of the constructor using the following
+In the above example we have a simple React component, the most important line is where we `bind()` the `this` keyword to this particular component at the end of the `constructor()` using the following
 
 ```javascript
 this.switchOff = this.switchOff.bind(this)
@@ -251,3 +251,5 @@ Without this line, the `switchOff()` function will not know what context to be c
 ## Conclusion
 
 As you can see, the `this` keyword is quite easy to understand when we look at each concept individually, I think the confusion arises around these little "Gotchas" which seem to be all over the place in Javascript.
+
+As always, any questions or comments then please feel free to leave them in the comments section below, and if you see any mistakes please feel free to click on the Github link at the top of this page and submit a pull request.
