@@ -61,15 +61,19 @@ function SEO({ description, lang, meta, title, image, siteUrl, postUrl }) {
         },
         {
           property: `og:image`,
-          content: "http://www.richardbagshaw.co.uk/" + image,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
+          content: siteUrl + image,
         },
         {
           name: `twitter:image`,
           content: siteUrl + image,
+        },
+        {
+          name: `image`,
+          content: siteUrl + image,
+        },
+        {
+          name: `twitter:card`,
+          content: `summary`,
         },
         {
           name: `twitter:creator`,
