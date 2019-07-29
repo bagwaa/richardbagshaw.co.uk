@@ -13,7 +13,7 @@ class NotFoundPage extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="404: Not Found" />
-        <h1 className="text-center text-6xl">
+        <h1 className="text-center text-6xl mb-8">
           404{" "}
           <span role="img" aria-label="sad face">
             😔
@@ -24,7 +24,7 @@ class NotFoundPage extends React.Component {
           alt="Four Oh Four - So Sorry!"
           className="w-1/3 rounded-lg shadow-lg mx-auto"
         />
-        <p className="text-center">
+        <p className="text-center font-os">
           You just hit a route that doesn&#39;t exist... the sadness is real
         </p>
       </Layout>
