@@ -247,7 +247,7 @@ var_dump($parent);
 // string(32) "App\Repositories\PizzaRepository"
 ```
 
-Aha! so the parent of the Double is `App\Repositories\PizzaRepository` which is why our `PizzaMaker` is happy to accept this through dependency injection.
+Aha! so the parent of the Double is `PizzaRepository` which is why our `PizzaMaker` is happy to accept this through dependency injection.
 
 Okay, enough of this digging around in the weeds, let's run our test.
 
