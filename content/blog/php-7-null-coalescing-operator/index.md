@@ -26,7 +26,7 @@ $firstname = isset($user->firstname) ? $user->firstname : 'guest';
 In PHP5 there is a way todo this using what I would consider a hack, it works exactly the same way, and is less code, but it doesn't really read that well.
 
 ```php
-$firstname = $user->firstname ?: "guest";
+$firstname = @$user->firstname ?: "guest";
 ```
 
 Essentially, all we are doing here is using a ternary operator to check that `$user->firstname` has been assigned a value, if it has, then we assign that to `$firstname`
