@@ -9,9 +9,9 @@ gitHubPageLink: "https://github.com/bagwaa/richardbagshaw.co.uk/blob/master/cont
 In this series of blog posts I will be covering some of the new features available in the upcoming release of PHP 7, I know we are all very busy bees, so this series gets to the point and may be useful for anyone just wanting to understand these features quickly.
 
 * Part #1 - [Scalar Type Hints](https://www.richardbagshaw.co.uk/php-7-scalar-typehints)
-* Part #2 - Return Types
-* Part #3 - Spaceships
-* Part #4 - Null Coalescing Operator
+* Part #2 - [Return Types](https://www.richardbagshaw.co.uk/php-7-return-types)
+* Part #3 - [Spaceships](https://www.richardbagshaw.co.uk/php-7-spaceships)
+* Part #4 - [Null Coalescing Operator](https://www.richardbagshaw.co.uk/php-7-null-coalescing-operator)
 
 ## PHP5
 

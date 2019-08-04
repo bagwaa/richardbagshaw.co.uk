@@ -10,8 +10,8 @@ In this series of blog posts I will be covering some of the new features availab
 
 * Part #1 - [Scalar Type Hints](https://www.richardbagshaw.co.uk/php-7-scalar-typehints)
 * Part #2 - [Return Types](https://www.richardbagshaw.co.uk/php-7-return-types)
-* Part #3 - Spaceships
-* Part #4 - Null Coalescing Operator
+* Part #3 - [Spaceships](https://www.richardbagshaw.co.uk/php-7-spaceships)
+* Part #4 - [Null Coalescing Operator](https://www.richardbagshaw.co.uk/php-7-null-coalescing-operator)
 
 ## PHP 5
 
