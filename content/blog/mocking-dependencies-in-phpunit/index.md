@@ -7,4 +7,40 @@ author: "Richard Bagshaw"
 gitHubPageLink: "https://github.com/bagwaa/richardbagshaw.co.uk/blob/master/content/blog/mocking-dependencies-in-phpunit/index.md"
 ---
 
-Foo Bar Ba
+I remember the good old days ...
+
+## What is a mock and why do we need it?
+
+Foo
+
+## Hitting the database and services means slower tests
+
+Bar
+
+## Simple Mock Example with Prophecy
+
+Baz
+
+## Spies, Stubs, Mocks, eh?
+
+Noo
+
+## What can we mock?
+
+Foo
+
+## What should we be mocking in ours tests?
+
+Baz
+
+## Should we mock everything then?
+
+Foo
+
+## Other Mocking Libraries
+
+Some examples of syntax
+
+## Do what helps you sleep at night
+
+Foo
