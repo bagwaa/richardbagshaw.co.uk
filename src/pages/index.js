@@ -37,8 +37,8 @@ class BlogIndex extends React.Component {
             </div>
 
             <div className="w-full p-6">
-              <h3 className="font-os font-extrabold text-3xl md:text-3xl tracking-wide text-gray-800">
-                Latest Posts
+              <h3 className="font-os font-extrabold text-2xl md:text-3xl tracking-wide text-gray-800">
+                All Posts, Ever!
               </h3>
             </div>
 
