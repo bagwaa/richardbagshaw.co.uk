@@ -3,6 +3,7 @@ title: Mocking Dependencies with PHPUnit and Prophecy
 date: "2019-08-04T07:57:00.100Z"
 description: Mocking dependencies is probably one of the most useful features of testing, let's take a look at how we can accomplish this with Prophecy
 featuredImage: "./header.png"
+icon: "./icon.png"
 author: "Richard Bagshaw"
 gitHubPageLink: "https://github.com/bagwaa/richardbagshaw.co.uk/blob/master/content/blog/mocking-dependencies-with-phpunit-and-prophecy/index.md"
 ---

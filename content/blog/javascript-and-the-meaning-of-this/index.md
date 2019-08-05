@@ -3,6 +3,7 @@ title: Javascript and the meaning of this
 date: "2019-07-28T23:35:00.000Z"
 description: One of the most confusing aspects when learning either plain old Javascript or even a Javascript framework is understanding what the `this` keyword means and why it's not bound by default.
 featuredImage: "./header.png"
+icon: "./icon.png"
 author: "Richard Bagshaw"
 gitHubPageLink: "https://github.com/bagwaa/richardbagshaw.co.uk/blob/master/content/blog/javascript-and-the-meaning-of-this/index.md"
 ---

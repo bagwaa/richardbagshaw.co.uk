@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Img from "gatsby-image"
 
 class BlogIndex extends React.Component {
   render() {
@@ -16,8 +17,8 @@ class BlogIndex extends React.Component {
 
         <div className="flex m-4">
           <div className="container lg:max-w-4xl mx-auto">
-            <div className="w-full bg-gray-100 p-6 rounded-sm shadow">
-              <h2 className="font-os font-extrabold text-3xl md:text-5xl tracking-wide text-gray-800">
+            <div className="w-full bg-blue-100 p-6 shadow">
+              <h2 className="font-os font-bold text-3xl md:text-5xl tracking-wide text-gray-800">
                 Hi, I'm Richard.
               </h2>
               <p className="inline-block font-os text-lg tracking-wide pt-6 pl-1 text-gray-800 w-full text-justify">
@@ -35,29 +36,32 @@ class BlogIndex extends React.Component {
               </p>
             </div>
 
+            <div className="w-full p-6">
+              <h3 className="font-os font-extrabold text-3xl md:text-3xl tracking-wide text-gray-800">
+                Latest Posts
+              </h3>
+            </div>
+
             {posts.map(({ node }) => {
               const title = node.frontmatter.title || node.fields.slug
+
               return (
-                <div key={node.fields.slug}>
-                  <div className="text-center">
-                    <h3 className="text-center text-3xl md:text-4xl font-medium text-gray-700 pt-8 leading-snug font-os tracking-wide">
-                      <Link
-                        className="shadow-none hover:text-red-600"
-                        to={node.fields.slug}
-                      >
-                        {title}
-                      </Link>
-                    </h3>
-                  </div>
-                  <div>
-                    <div className="text-center font-semibold font-os text-base text-gray-500 tracking-wide">
-                      <div>
-                        <small className="uppercase ">
-                          {node.frontmatter.date}
-                        </small>
-                      </div>
-                    </div>
-                  </div>
+                <div className="flex w-full px-6 py-2 hover:bg-gray-200">
+                  <Img
+                    style={{ minWidth: "30px", minHeight: "30px" }}
+                    sizes={node.frontmatter.icon.childImageSharp.sizes}
+                  />
+                  <p
+                    key={node.fields.slug}
+                    className="pl-3 text-lg font-medium text-gray-700 leading-snug font-os tracking-wide"
+                  >
+                    <Link
+                      className="shadow-none hover:text-blue-600"
+                      to={node.fields.slug}
+                    >
+                      {title}
+                    </Link>
+                  </p>
                 </div>
               )
             })}
@@ -89,6 +93,13 @@ export const pageQuery = graphql`
             title
             description
             author
+            icon {
+              childImageSharp {
+                sizes(maxWidth: 30) {
+                  ...GatsbyImageSharpSizes
+                }
+              }
+            }
             featuredImage {
               childImageSharp {
                 sizes(maxWidth: 800) {

@@ -3,6 +3,7 @@ title: The Constant Learning Cycle of a Web Developer
 date: "2019-07-16T17:23:01.197Z"
 description: Learning a new language or scripting language can be a daunting task, however I think it's always good to have a reason as to why you're learning a particular skill.
 featuredImage: "./header.jpg"
+icon: "./icon.png"
 author: "Richard Bagshaw"
 gitHubPageLink: "https://github.com/bagwaa/richardbagshaw.co.uk/blob/master/content/blog/the-constant-learning-cycle/index.md"
 ---

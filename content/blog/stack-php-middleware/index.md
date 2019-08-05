@@ -1,13 +1,14 @@
 ---
-title: Stack PHP Middleware 
+title: Stack PHP Middleware
 date: "2015-02-12T16:52:01.197Z"
 description: In this post lets take a look at middleware and StackPHP
 featuredImage: "./header.jpg"
+icon: "./icon.png"
 author: "Richard Bagshaw"
 gitHubPageLink: "https://github.com/bagwaa/richardbagshaw.co.uk/blob/master/content/blog/stack-php-middleware/index.md"
 ---
 
-Middleware isn't something that exclusive to any particular framework and it has in fact been around for a long time. 
+Middleware isn't something that exclusive to any particular framework and it has in fact been around for a long time.
 
 As a freelancer I frequently get to work on really interesting stuff, and recently I have been building a super lightweight custom framework based on illuminate components, one of the requirements was to build in an easy to use middleware component based on [StackPHP](https://stackphp.com/)
 
@@ -19,7 +20,7 @@ Before we can really talk about middleware and [StackPHP](https://stackphp.com/)
 >
 > This pattern is designed so that multiple decorators can be stacked on top of each other, each time adding a new functionality to the overridden method(s).
 
-So the idea is basically this, you take an object, and you wrap this object in another object which provides additional functionality, and you keep wrapping extra classes repeatedly for each additional requirement. 
+So the idea is basically this, you take an object, and you wrap this object in another object which provides additional functionality, and you keep wrapping extra classes repeatedly for each additional requirement.
 
 As an example, we could take a web application and wrap that using the decorator pattern with another class that provides logging, we could then wrap this again with another class that provides caching, on so on.
 
@@ -31,7 +32,7 @@ So armed with the knowledge of the decorator pattern, we can now talk about [Sta
 
 ![Onion](./onion.png)
 
-Looking at this we can easily see that in the center we have our application which will implement some common interface, and around it we can see additional middleware layers for `Authentication` and `Session`, both of these will also implement this common interface. 
+Looking at this we can easily see that in the center we have our application which will implement some common interface, and around it we can see additional middleware layers for `Authentication` and `Session`, both of these will also implement this common interface.
 
 As our request / response travels through our application we can modify or alter behaviour as necessary.
 
@@ -57,7 +58,7 @@ If we take a look at the code for this you will see how simple this interface re
 
 namespace Symfony\Component\HttpKernel;
 
-use Symfony\Component\HttpFoundation\Request;  
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
 /**
@@ -67,7 +68,7 @@ use Symfony\Component\HttpFoundation\Response;
  *
  * @api
  */
-interface HttpKernelInterface  
+interface HttpKernelInterface
 {
     const MASTER_REQUEST = 1;
     const SUB_REQUEST = 2;
@@ -93,7 +94,7 @@ interface HttpKernelInterface
 }
 ```
 
-As you can see, this ensures that we implement a method called handle() that receives a `Request` and returns a `Response` object. 
+As you can see, this ensures that we implement a method called handle() that receives a `Request` and returns a `Response` object.
 
 So with this interface we simply make sure our main `application class` (IoC container) implements this interface, and any additional middleware we develop should also implement this.
 
@@ -116,11 +117,11 @@ The middleware in this example could look something like this.
 ```php
 namespace Cartisan\Middleware;
 
-use Cartisan\Core\App;  
-use Symfony\Component\HttpFoundation\Request;  
+use Cartisan\Core\App;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\HttpKernelInterface;
 
-class Logger implements HttpKernelInterface  
+class Logger implements HttpKernelInterface
 {
     protected $app;
 
@@ -153,7 +154,7 @@ At this point the rest is simple, as a request passes through our application it
 So in the previous example we decorated our app with a really simple logger, but in the real world (as you know) it's not always that simple, we may also pass in additional options when using the decorator, essentially it can start to look more like this.
 
 ```php
-use Symfony\Component\HttpKernel\HttpCache\Store;  
+use Symfony\Component\HttpKernel\HttpCache\Store;
 use Symfony\Component\HttpKernel\HttpCache\HttpCache;
 
 $app = new Silex\Application();

@@ -3,6 +3,7 @@ title: An Introduction to Gatsby.js
 date: "2019-07-11T14:01:13.129Z"
 description: At a very basic level Gatsby is a site / app generator which aims to solve all the above problems by having sensible defaults out of the box, however it is a little more than that.
 featuredImage: "./header.jpg"
+icon: "./icon.png"
 author: "Richard Bagshaw"
 gitHubPageLink: "https://github.com/bagwaa/richardbagshaw.co.uk/blob/master/content/blog/an-introduction-to-gatsby-js/index.md"
 ---

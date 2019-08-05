@@ -3,6 +3,7 @@ title: Clean Code
 date: "2016-06-16T09:43:31.169Z"
 description: Does clean code matter? or is it simply a vanity metric for developers and programmers to get over-excited about?
 featuredImage: "./header.jpg"
+icon: "./icon.png"
 author: "Richard Bagshaw"
 gitHubPageLink: "https://github.com/bagwaa/richardbagshaw.co.uk/blob/master/content/blog/clean-code/index.md"
 ---

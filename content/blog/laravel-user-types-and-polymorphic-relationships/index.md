@@ -3,6 +3,7 @@ title: Laravel User Types and Polymorphic Relationships
 date: "2016-06-02T22:40:32.169Z"
 description: Polymorphic relations allow a model to belong to more than one other model, on a single association.
 featuredImage: "./header.png"
+icon: "./icon.png"
 author: "Richard Bagshaw"
 gitHubPageLink: "https://github.com/bagwaa/richardbagshaw.co.uk/blob/master/content/blog/laravel-user-types-and-polymorphic-relationships/index.md"
 ---
