@@ -48,8 +48,8 @@ class BlogIndex extends React.Component {
               return (
                 <div className="flex w-full px-6 py-2 hover:bg-gray-200">
                   <Img
-                    style={{ minWidth: "30px", minHeight: "30px" }}
                     sizes={node.frontmatter.icon.childImageSharp.sizes}
+                    className="w-8 h-8 flex-none"
                   />
                   <p
                     key={node.fields.slug}
