@@ -17,8 +17,8 @@ class BlogIndex extends React.Component {
 
         <div className="flex m-4">
           <div className="container lg:max-w-4xl mx-auto">
-            <div className="w-full bg-blue-100 p-6 shadow">
-              <h2 className="font-os font-bold text-3xl md:text-5xl tracking-wide text-gray-800">
+            <div className="w-full p-6">
+              <h2 className="font-os font-bold text-2xl md:text-4xl tracking-wide text-gray-800">
                 Hi, I'm Richard.
               </h2>
               <p className="inline-block font-os text-lg tracking-wide pt-6 pl-1 text-gray-800 w-full text-justify">
@@ -26,13 +26,12 @@ class BlogIndex extends React.Component {
                 <span className="font-bold italic text-green-600">
                   freelance
                 </span>{" "}
-                software developer and blogger based in Nottingham, UK. I like
-                to spend time learning everything I can about web development
+                software developer based in Nottingham, UK. I like
+                to spend my free time learning everything I can about web development
                 both frontend as well as backend.
                 <br />
                 <br />
-                That includes everything from React and Vue, to PHP and Laravel
-                APIs
+                That includes everything from <a href="https://reactjs.org/">React</a> and <a href="https://vuejs.org/">Vue</a>, to <a href="https://www.php.net/">PHP</a> and <a href="https://laravel.com/">Laravel</a>.
               </p>
             </div>
 

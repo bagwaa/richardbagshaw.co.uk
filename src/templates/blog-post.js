@@ -106,9 +106,6 @@ class BlogPostTemplate extends React.Component {
                 </p>
               </form>
             </div>
-            <div className="mt-8 py-10">
-              <Comments />
-            </div>
           </div>
         </div>
       </Layout>
@@ -117,26 +114,6 @@ class BlogPostTemplate extends React.Component {
 }
 
 export default BlogPostTemplate
-
-class Comments extends React.Component {
-  constructor(...args) {
-    super(...args)
-    this.ref = React.createRef()
-  }
-  render() {
-    return (
-      <div ref={this.ref} className="comments">
-        <div id="commento"></div>
-      </div>
-    )
-  }
-  componentDidMount() {
-    const s = document.createElement("script")
-    s.src = "https://cdn.commento.io/js/commento.js"
-    s.setAttribute("data-timestamp", +new Date())
-    this.ref.current.appendChild(s)
-  }
-}
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
