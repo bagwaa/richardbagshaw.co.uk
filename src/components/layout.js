@@ -11,7 +11,7 @@ class Layout extends React.Component {
     header = (
       <h3>
         <Link
-          className="font-os bg-black text-white py-3 px-8 uppercase text-sm font-semibold hover:bg-gray-800"
+          className="font-os bg-gray-900 text-white py-3 px-8 uppercase text-sm font-semibold"
           to={`/`}
         >
           {title}
