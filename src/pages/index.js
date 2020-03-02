@@ -93,9 +93,18 @@ class BlogIndex extends React.Component {
               </h3>
             </div>
             <div className="w-full px-6">
-              <div className="font-os font-extrabold text-1xl md:text-1xl tracking-wide text-gray-800 pb-3 mb-3 border-b">
-                Rentora (<a href="https://www.rentora.co.uk">https://www.rentora.co.uk</a>)
+              <div className="font-os text-gray-800 pb-3 mb-3 border-b">
+                <div className="font-extrabold text-1xl md:text-1xl tracking-wide mb-2">
+                  Rentora (<a href="https://www.rentora.co.uk">https://www.rentora.co.uk</a>)
+                </div>
+                <p>
+                  <a href="https://www.rentora.co.uk">rentora.co.uk</a> makes it easy to list properties, find tenants, manage tenancies, collect rent and more.
+                </p>
+                <p className="mt-3">
+                List your property, review applications, manage tenancies, perform inventories, share documents, get paid and more - anywhere, on any device, 24/7.
+                </p>
               </div>
+              
               <div className="inline-block pr-1 w-1/2">
                 <a href="https://rentora.co.uk/" target="_new">
                   <img src={projectRentora1} />
