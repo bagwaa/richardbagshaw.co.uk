@@ -43,13 +43,14 @@ class BlogIndex extends React.Component {
 
             <div className="iframe-container">
               <iframe 
+                title="React Course on YouTube"
                 className="p-6"
                 width="560" 
                 height="315" 
                 src="https://www.youtube.com/embed/sxV1krCtHuU" 
-                frameborder="0" 
+                frameBorder="0" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen
+                allowFullScreen
               >
               </iframe>
             </div>
@@ -60,11 +61,11 @@ class BlogIndex extends React.Component {
               </h3>
             </div>
 
-            {posts.map(({ node }) => {
+            {posts.map(({ node }, index) => {
               const title = node.frontmatter.title || node.fields.slug
 
               return (
-                <div className="flex w-full px-6 py-2 hover:bg-gray-200">
+                <div className="flex w-full px-6 py-2 hover:bg-gray-200" key={index}>
                   <Img
                     sizes={node.frontmatter.icon.childImageSharp.sizes}
                     className="w-8 h-8 flex-none"
