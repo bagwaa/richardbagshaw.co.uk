@@ -4,6 +4,8 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
+import projectRentora1 from "../../static/rentora1.png"
+import projectRentora2 from "../../static/rentora2.png"
 
 class BlogIndex extends React.Component {
   render() {
@@ -84,6 +86,28 @@ class BlogIndex extends React.Component {
                 </div>
               )
             })}
+
+            <div className="w-full p-6">
+              <h3 className="font-os font-extrabold text-2xl md:text-2xl tracking-wide text-gray-800">
+                Latest Freelance Projects
+              </h3>
+            </div>
+            <div className="w-full px-6">
+              <div className="font-os font-extrabold text-1xl md:text-1xl tracking-wide text-gray-800 pb-3 mb-3 border-b">
+                Rentora (<a href="https://www.rentora.co.uk">https://www.rentora.co.uk</a>)
+              </div>
+              <div className="inline-block pr-1 w-1/2">
+                <a href="https://rentora.co.uk/" target="_new">
+                  <img src={projectRentora1} />
+                </a>
+              </div>
+              <div className="inline-block pl-1 w-1/2">
+                <a href="https://rentora.co.uk/listings/in/london" target="_new">
+                  <img src={projectRentora2} />
+                </a>
+              </div>
+            </div>
+
           </div>
         </div>
       </Layout>
