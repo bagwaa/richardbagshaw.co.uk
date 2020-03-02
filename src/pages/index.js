@@ -19,14 +19,14 @@ class BlogIndex extends React.Component {
           <div className="container lg:max-w-4xl mx-auto">
             <div className="w-full p-6">
               <h2 className="font-os font-bold text-2xl md:text-4xl tracking-wide text-gray-800">
-                Hi, I'm Richard 👋
+                Hi, I'm Richard <span role="img" aria-label="waving">👋</span>
               </h2>
               <p className="inline-block font-os text-lg tracking-wide pt-6 pl-1 text-gray-800 w-full text-justify">
                 I'm a{" "}
                 <span className="font-bold italic text-green-600">
                   freelance
                 </span>{" "}
-                software developer based in Nottingham, UK. I like
+                software developer and <a href="https://www.youtube.com/channel/UC5cM2sE9tQ9trKFZUiwv_7A">YouTuber</a> based in Nottingham, UK. I like
                 to spend my free time learning everything I can about web development
                 both frontend as well as backend.
                 <br />
@@ -36,7 +36,26 @@ class BlogIndex extends React.Component {
             </div>
 
             <div className="w-full p-6">
-              <h3 className="font-os font-extrabold text-2xl md:text-3xl tracking-wide text-gray-800">
+              <h3 className="font-os font-extrabold text-2xl md:text-2xl tracking-wide text-gray-800">
+                Latest YouTube Content
+              </h3>
+            </div>
+
+            <div className="iframe-container">
+              <iframe 
+                className="p-6"
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/sxV1krCtHuU" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen
+              >
+              </iframe>
+            </div>
+
+            <div className="w-full p-6">
+              <h3 className="font-os font-extrabold text-2xl md:text-2xl tracking-wide text-gray-800">
                 All Posts, Ever!
               </h3>
             </div>
