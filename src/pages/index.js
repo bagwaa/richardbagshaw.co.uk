@@ -134,7 +134,7 @@ class BlogIndex extends React.Component {
                   <img src={projectTransferMyBills1} className="mx-auto" alt="Link to TransferMyBills Homepage" />
                 </a>
               </div>
-              <div className="inline-block pr-1 w-1/2">
+              <div className="inline-block pl-1 w-1/2">
                 <a href="https://transfermybills.com/" target="_new">
                   <img src={projectTransferMyBills2} className="mx-auto" alt="Link to TransferMyBills Homepage" />
                 </a>
