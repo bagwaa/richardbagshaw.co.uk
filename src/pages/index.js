@@ -6,6 +6,8 @@ import SEO from "../components/seo"
 import Img from "gatsby-image"
 import projectRentora1 from "../../static/rentora1.png"
 import projectRentora2 from "../../static/rentora2.png"
+import projectTransferMyBills1 from "../../static/transfermybills.png"
+import projectTransferMyBills2 from "../../static/transfermybills2.png"
 
 class BlogIndex extends React.Component {
   render() {
@@ -116,6 +118,29 @@ class BlogIndex extends React.Component {
                 </a>
               </div>
             </div>
+
+            <div className="w-full px-6">
+              <div className="font-os text-gray-800 pb-3 mb-3 border-b">
+                <div className="font-extrabold text-1xl md:text-1xl tracking-wide mb-2">
+                  TransferMyBills (<a href="https://transfermybills.com/" target="_new">https://transfermybills.com</a>)
+                </div>
+                <p>
+                Relocating can be stressful, but contacting everyone is easy using our free service.  Let <a href="https://transfermybills.com/" target="_new">transfermybills.com</a> notify existing utility, insurance and service providers of your impending move
+                </p>
+              </div>
+              
+              <div className="inline-block pr-1 w-1/2">
+                <a href="https://transfermybills.com/" target="_new">
+                  <img src={projectTransferMyBills1} className="mx-auto" alt="Link to TransferMyBills Homepage" />
+                </a>
+              </div>
+              <div className="inline-block pr-1 w-1/2">
+                <a href="https://transfermybills.com/" target="_new">
+                  <img src={projectTransferMyBills2} className="mx-auto" alt="Link to TransferMyBills Homepage" />
+                </a>
+              </div>
+            </div>
+
 
           </div>
         </div>
