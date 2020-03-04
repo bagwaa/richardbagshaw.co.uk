@@ -17,7 +17,7 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="All posts" />
+        <SEO title="Freelance Web Developer" />
 
         <div className="flex m-4">
           <div className="container lg:max-w-4xl mx-auto">
