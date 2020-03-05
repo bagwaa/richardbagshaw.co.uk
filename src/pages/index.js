@@ -30,7 +30,7 @@ class BlogIndex extends React.Component {
                 <span className="font-bold italic text-green-600">
                   freelance
                 </span>{" "}
-                software developer and <a target="_new" href="https://www.youtube.com/channel/UC5cM2sE9tQ9trKFZUiwv_7A">YouTuber</a> and <a target="_new" href="https://www.thefreelancedeveloper.co.uk/">Podcaster</a> based in Nottingham, UK. I like
+                software developer, <a target="_new" href="https://www.youtube.com/channel/UC5cM2sE9tQ9trKFZUiwv_7A">YouTuber</a> and <a target="_new" href="https://www.thefreelancedeveloper.co.uk/">Podcaster</a> based in Nottingham, UK. I like
                 to spend my free time learning everything I can about web development
                 both frontend as well as backend.
                 <br />
