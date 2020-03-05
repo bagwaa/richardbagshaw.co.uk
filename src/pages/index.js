@@ -25,7 +25,7 @@ class BlogIndex extends React.Component {
               <h2 className="font-os font-bold text-2xl md:text-4xl tracking-wide text-gray-800">
                 Hi, I'm Richard <span role="img" aria-label="waving">👋</span>
               </h2>
-              <p className="inline-block font-os text-lg tracking-wide pt-6 pl-1 text-gray-800 w-full text-justify">
+              <p className="inline-block font-os text-lg tracking-wide pt-6 text-gray-800 w-full text-justify">
                 I'm a{" "}
                 <span className="font-bold italic text-green-600">
                   freelance
@@ -39,9 +39,9 @@ class BlogIndex extends React.Component {
               </p>
             </div>
 
-            <div className="w-full p-6">
+            <div className="w-full px-6">
               <h3 className="font-os font-extrabold text-2xl md:text-2xl tracking-wide text-gray-800">
-                YouTube & Podcast Content
+                YouTube & Podcast
               </h3>
             </div>
 
@@ -59,8 +59,9 @@ class BlogIndex extends React.Component {
               </iframe>
             </div>
 
-            <div className="md:w-1/2 w-full p-6">
+            <div className="md:w-1/2 w-full px-6">
               <iframe
+                className="border border-gray-500"
                 title="The Freelance Developer Podcast"
                 height="200px"
                 width="100%"
@@ -73,7 +74,7 @@ class BlogIndex extends React.Component {
 
             <div className="w-full p-6">
               <h3 className="font-os font-extrabold text-2xl md:text-2xl tracking-wide text-gray-800">
-                All Posts, Ever!
+                All Blog Posts, Written, Ever!
               </h3>
             </div>
 
@@ -103,7 +104,7 @@ class BlogIndex extends React.Component {
 
             <div className="w-full p-6">
               <h3 className="font-os font-extrabold text-2xl md:text-2xl tracking-wide text-gray-800">
-                Latest Freelance Projects
+                Previous Freelance Projects
               </h3>
             </div>
             <div className="w-full px-6">
