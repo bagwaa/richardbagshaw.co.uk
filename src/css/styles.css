@@ -14,14 +14,14 @@
   color: #4a5568;
 }
 
-.iframe-container {
+.youtube-container {
   position: relative;
   width: 100%;
   padding-bottom: 56.25%; 
   height: 0;
 }
 
-.iframe-container iframe {
+.youtube-container iframe {
   position: absolute;
   top:0;
   left: 0;

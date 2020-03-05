@@ -30,7 +30,7 @@ class BlogIndex extends React.Component {
                 <span className="font-bold italic text-green-600">
                   freelance
                 </span>{" "}
-                software developer and <a href="https://www.youtube.com/channel/UC5cM2sE9tQ9trKFZUiwv_7A">YouTuber</a> based in Nottingham, UK. I like
+                software developer and <a target="_new" href="https://www.youtube.com/channel/UC5cM2sE9tQ9trKFZUiwv_7A">YouTuber</a> and <a target="_new" href="https://the-freelance-developer-podcast.simplecast.com/episodes/hello-world">Podcaster</a> based in Nottingham, UK. I like
                 to spend my free time learning everything I can about web development
                 both frontend as well as backend.
                 <br />
@@ -41,21 +41,27 @@ class BlogIndex extends React.Component {
 
             <div className="w-full p-6">
               <h3 className="font-os font-extrabold text-2xl md:text-2xl tracking-wide text-gray-800">
-                Latest YouTube Content
+                YouTube & Podcast Content
               </h3>
             </div>
 
-            <div className="iframe-container">
-              <iframe 
+            <div className="youtube-container">
+              <iframe
                 title="React Course on YouTube"
                 className="p-6"
-                width="560" 
-                height="315" 
-                src="https://www.youtube.com/embed/sxV1krCtHuU" 
-                frameBorder="0" 
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/sxV1krCtHuU"
+                frameBorder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               >
+              </iframe>
+            </div>
+
+            <div className="w-1/2 p-6">
+              <iframe height="200px" width="100%" frameBorder="no" scrolling="no" seamless
+                      src="https://player.simplecast.com/31c5cc9b-422a-41ed-bdfd-e5826d0af05b?dark=false">
               </iframe>
             </div>
 
