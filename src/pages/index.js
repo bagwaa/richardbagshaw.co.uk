@@ -19,7 +19,7 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="Freelance Web Developer" />
 
-        <div className="flex m-4">
+        <div className="flex sm:m-0 md:m-4">
           <div className="container lg:max-w-4xl mx-auto">
             <div className="w-full p-6">
               <h2 className="font-os font-bold text-2xl md:text-4xl tracking-wide text-gray-800">
@@ -59,9 +59,15 @@ class BlogIndex extends React.Component {
               </iframe>
             </div>
 
-            <div className="w-1/2 p-6">
-              <iframe height="200px" width="100%" frameBorder="no" scrolling="no" seamless
-                      src="https://player.simplecast.com/31c5cc9b-422a-41ed-bdfd-e5826d0af05b?dark=false">
+            <div className="md:w-1/2 w-full p-6">
+              <iframe
+                title="The Freelance Developer Podcast"
+                height="200px"
+                width="100%"
+                frameBorder="no"
+                scrolling="no"
+                seamless
+                src="https://player.simplecast.com/31c5cc9b-422a-41ed-bdfd-e5826d0af05b?dark=false">
               </iframe>
             </div>
 
