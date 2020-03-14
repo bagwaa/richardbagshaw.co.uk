@@ -59,7 +59,20 @@ class BlogIndex extends React.Component {
               </iframe>
             </div>
 
-            <div className="md:w-1/2 w-full px-6">
+            <div className="md:w-1/2 w-full px-6 inline-block">
+              <iframe 
+                className="border border-gray-500"
+                title="The Freelance Developer Podcast"
+                height="200px"
+                width="100%"
+                frameborder="no"
+                scrolling="no"
+                seamless 
+                src="https://player.simplecast.com/af5f4a50-51d3-400b-84c8-b4708a9ebbed?dark=false">
+              </iframe>
+            </div>
+            
+            <div className="md:w-1/2 w-full px-6 inline-block">
               <iframe
                 className="border border-gray-500"
                 title="The Freelance Developer Podcast"
