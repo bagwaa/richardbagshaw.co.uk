@@ -60,6 +60,19 @@ class BlogIndex extends React.Component {
             </div>
 
             <div className="md:w-1/2 w-full px-6 inline-block">
+              <iframe
+                className="border border-gray-500"
+                title="The Freelance Developer Podcast"
+                height="200px"
+                width="100%"
+                frameBorder="no"
+                scrolling="no"
+                seamless
+                src="https://player.simplecast.com/8ae0b101-f2de-47fb-ab78-435e87f1474d?dark=false">
+              </iframe>
+            </div>
+
+            <div className="md:w-1/2 w-full px-6 inline-block">
               <iframe 
                 className="border border-gray-500"
                 title="The Freelance Developer Podcast"
@@ -69,19 +82,6 @@ class BlogIndex extends React.Component {
                 scrolling="no"
                 seamless 
                 src="https://player.simplecast.com/af5f4a50-51d3-400b-84c8-b4708a9ebbed?dark=false">
-              </iframe>
-            </div>
-            
-            <div className="md:w-1/2 w-full px-6 inline-block">
-              <iframe
-                className="border border-gray-500"
-                title="The Freelance Developer Podcast"
-                height="200px"
-                width="100%"
-                frameBorder="no"
-                scrolling="no"
-                seamless
-                src="https://player.simplecast.com/31c5cc9b-422a-41ed-bdfd-e5826d0af05b?dark=false">
               </iframe>
             </div>
 
