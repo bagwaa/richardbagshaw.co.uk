@@ -47,11 +47,11 @@ class BlogIndex extends React.Component {
 
             <div className="youtube-container">
               <iframe
-                title="React Course on YouTube"
+                title="HTML & CSS Challenge on Frontend Mentor"
                 className="p-6"
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/sxV1krCtHuU"
+                src="https://www.youtube.com/embed/iHF_PP6yurQ"
                 frameBorder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
