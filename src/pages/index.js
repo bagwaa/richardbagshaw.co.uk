@@ -68,7 +68,7 @@ class BlogIndex extends React.Component {
                 frameBorder="no"
                 scrolling="no"
                 seamless
-                src="https://player.simplecast.com/8ae0b101-f2de-47fb-ab78-435e87f1474d?dark=false">
+                src="https://player.simplecast.com/27b1d4f8-3f6e-47f7-8365-a6b8115073ca?dark=false">
               </iframe>
             </div>
 
@@ -81,7 +81,7 @@ class BlogIndex extends React.Component {
                 frameborder="no"
                 scrolling="no"
                 seamless 
-                src="https://player.simplecast.com/af5f4a50-51d3-400b-84c8-b4708a9ebbed?dark=false">
+                src="https://player.simplecast.com/8ae0b101-f2de-47fb-ab78-435e87f1474d?dark=false">
               </iframe>
             </div>
 
