@@ -20,14 +20,14 @@ class BlogIndex extends React.Component {
         <SEO title="Freelance Web Developer" />
 
         <div className="flex sm:m-0 md:m-4">
-          <div className="container lg:max-w-4xl mx-auto">
+          <div className="container mx-auto lg:max-w-4xl">
             <div className="w-full p-6">
-              <h2 className="font-os font-bold text-2xl md:text-4xl tracking-wide text-gray-800">
+              <h2 className="text-2xl font-bold tracking-wide text-gray-800 font-os md:text-4xl">
                 Hi, I'm Richard <span role="img" aria-label="waving">👋</span>
               </h2>
-              <p className="inline-block font-os text-lg tracking-wide pt-6 text-gray-800 w-full text-justify">
+              <p className="inline-block w-full pt-6 text-lg tracking-wide text-justify text-gray-800 font-os">
                 I'm a{" "}
-                <span className="font-bold italic text-green-600">
+                <span className="italic font-bold text-green-600">
                   freelance
                 </span>{" "}
                 software developer, <a target="_new" href="https://www.youtube.com/channel/UC5cM2sE9tQ9trKFZUiwv_7A">YouTuber</a> and <a target="_new" href="https://www.thefreelancedeveloper.co.uk/">Podcaster</a> based in Nottingham, UK. I like
@@ -40,7 +40,7 @@ class BlogIndex extends React.Component {
             </div>
 
             <div className="w-full px-6">
-              <h3 className="font-os font-extrabold text-2xl md:text-2xl tracking-wide text-gray-800">
+              <h3 className="text-2xl font-extrabold tracking-wide text-gray-800 font-os md:text-2xl">
                 YouTube & Podcast
               </h3>
             </div>
@@ -59,7 +59,20 @@ class BlogIndex extends React.Component {
               </iframe>
             </div>
 
-            <div className="md:w-1/2 w-full px-6 inline-block">
+            <div className="inline-block w-full px-6 md:w-1/2">
+              <iframe 
+                className="border border-gray-500"
+                title="The Freelance Developer Podcast"
+                height="200px"
+                width="100%"
+                frameborder="no"
+                scrolling="no"
+                seamless 
+                src="https://player.simplecast.com/9bf0e9fe-9d9f-43b4-9acb-a406f412ea2f?dark=false">
+              </iframe>
+            </div>
+
+            <div className="inline-block w-full px-6 md:w-1/2">
               <iframe
                 className="border border-gray-500"
                 title="The Freelance Developer Podcast"
@@ -72,21 +85,8 @@ class BlogIndex extends React.Component {
               </iframe>
             </div>
 
-            <div className="md:w-1/2 w-full px-6 inline-block">
-              <iframe 
-                className="border border-gray-500"
-                title="The Freelance Developer Podcast"
-                height="200px"
-                width="100%"
-                frameborder="no"
-                scrolling="no"
-                seamless 
-                src="https://player.simplecast.com/8ae0b101-f2de-47fb-ab78-435e87f1474d?dark=false">
-              </iframe>
-            </div>
-
             <div className="w-full p-6">
-              <h3 className="font-os font-extrabold text-2xl md:text-2xl tracking-wide text-gray-800">
+              <h3 className="text-2xl font-extrabold tracking-wide text-gray-800 font-os md:text-2xl">
                 All Blog Posts, Written, Ever!
               </h3>
             </div>
@@ -98,11 +98,11 @@ class BlogIndex extends React.Component {
                 <div className="flex w-full px-6 py-2 hover:bg-gray-200" key={index}>
                   <Img
                     sizes={node.frontmatter.icon.childImageSharp.sizes}
-                    className="w-8 h-8 flex-none"
+                    className="flex-none w-8 h-8"
                   />
                   <p
                     key={node.fields.slug}
-                    className="pl-3 text-lg font-medium text-gray-700 leading-snug font-os tracking-wide"
+                    className="pl-3 text-lg font-medium leading-snug tracking-wide text-gray-700 font-os"
                   >
                     <Link
                       className="shadow-none hover:text-blue-600"
@@ -116,13 +116,13 @@ class BlogIndex extends React.Component {
             })}
 
             <div className="w-full p-6">
-              <h3 className="font-os font-extrabold text-2xl md:text-2xl tracking-wide text-gray-800">
+              <h3 className="text-2xl font-extrabold tracking-wide text-gray-800 font-os md:text-2xl">
                 Previous Freelance Projects
               </h3>
             </div>
             <div className="w-full px-6">
-              <div className="font-os text-gray-800 pb-3 mb-3 border-b">
-                <div className="font-extrabold text-1xl md:text-1xl tracking-wide mb-2">
+              <div className="pb-3 mb-3 text-gray-800 border-b font-os">
+                <div className="mb-2 font-extrabold tracking-wide text-1xl md:text-1xl">
                   Rentora (<a href="https://rentora.co.uk/" target="_new">https://rentora.co.uk</a>)
                 </div>
                 <p>
@@ -133,12 +133,12 @@ class BlogIndex extends React.Component {
                 </p>
               </div>
               
-              <div className="inline-block pr-1 w-1/2">
+              <div className="inline-block w-1/2 pr-1">
                 <a href="https://rentora.co.uk/" target="_new">
                   <img src={projectRentora1} alt="Link to Rentora Homepage" />
                 </a>
               </div>
-              <div className="inline-block pl-1 w-1/2">
+              <div className="inline-block w-1/2 pl-1">
                 <a href="https://rentora.co.uk/listings/in/london" target="_new">
                   <img src={projectRentora2} alt="Link to Rentora Property Listings" />
                 </a>
@@ -146,8 +146,8 @@ class BlogIndex extends React.Component {
             </div>
 
             <div className="w-full px-6">
-              <div className="font-os text-gray-800 pb-3 mb-3 border-b">
-                <div className="font-extrabold text-1xl md:text-1xl tracking-wide mb-2">
+              <div className="pb-3 mb-3 text-gray-800 border-b font-os">
+                <div className="mb-2 font-extrabold tracking-wide text-1xl md:text-1xl">
                   TransferMyBills (<a href="https://transfermybills.com/" target="_new">https://transfermybills.com</a>)
                 </div>
                 <p>
@@ -155,12 +155,12 @@ class BlogIndex extends React.Component {
                 </p>
               </div>
               
-              <div className="inline-block pr-1 w-1/2">
+              <div className="inline-block w-1/2 pr-1">
                 <a href="https://transfermybills.com/" target="_new">
                   <img src={projectTransferMyBills1} className="mx-auto" alt="Link to TransferMyBills Homepage" />
                 </a>
               </div>
-              <div className="inline-block pl-1 w-1/2">
+              <div className="inline-block w-1/2 pl-1">
                 <a href="https://transfermybills.com/" target="_new">
                   <img src={projectTransferMyBills2} className="mx-auto" alt="Link to TransferMyBills Homepage" />
                 </a>
