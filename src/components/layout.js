@@ -11,7 +11,7 @@ class Layout extends React.Component {
     header = (
       <h3>
         <Link
-          className="font-os bg-gray-900 text-white py-3 px-8 uppercase text-sm font-semibold"
+          className="px-8 py-3 text-sm font-semibold text-white uppercase bg-gray-900 font-os"
           to={`/`}
         >
           {title}
@@ -34,8 +34,8 @@ class Layout extends React.Component {
         </Helmet>
         <header className="py-12 text-center">{header}</header>
         <main>{children}</main>
-        <footer className="flex justify-center items-center h-64 mt-6 bg-gray-900">
-          <span className="font-os text-gray-500 text-center">
+        <footer className="flex items-center justify-center h-64 mt-6 bg-gray-900">
+          <span className="text-center text-gray-500 font-os">
             © {new Date().getFullYear()} Built by{" "}
             <a href="https://twitter.com/bagwaa">@bagwaa</a> using
             {` `}
@@ -43,6 +43,10 @@ class Layout extends React.Component {
             {` `}
             <br />
             and <a href="https://tailwindcss.com/">Tailwind CSS</a> ❤️
+            {` `}
+            <br />
+            <br />
+            Contact me on <a href="mailto:richard@bagshaw.co.uk">richard@bagshaw.co.uk</a> or <a href="tel:07545 966 851">07545 966 851</a> to discuss your requirements further.
           </span>
         </footer>
       </div>

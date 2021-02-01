@@ -36,6 +36,9 @@ class BlogIndex extends React.Component {
                 <br />
                 <br />
                 That includes everything from <a href="https://reactjs.org/">React</a> and <a href="https://vuejs.org/">Vue</a>, to <a href="https://www.php.net/">PHP</a> and <a href="https://laravel.com/">Laravel</a>.
+                <br />
+                <br />
+                You can contact me on <a href="mailto:richard@bagshaw.co.uk">richard@bagshaw.co.uk</a> or <a href="tel:07545 966 851">07545 966 851</a> to discuss your requirements further.
               </p>
             </div>
 
@@ -60,14 +63,14 @@ class BlogIndex extends React.Component {
             </div>
 
             <div className="inline-block w-full px-6 md:w-1/2">
-              <iframe 
+              <iframe
                 className="border border-gray-500"
                 title="The Freelance Developer Podcast"
                 height="200px"
                 width="100%"
                 frameborder="no"
                 scrolling="no"
-                seamless 
+                seamless
                 src="https://player.simplecast.com/9bf0e9fe-9d9f-43b4-9acb-a406f412ea2f?dark=false">
               </iframe>
             </div>
@@ -132,7 +135,7 @@ class BlogIndex extends React.Component {
                 List your property, review applications, manage tenancies, perform inventories, share documents, get paid and more - anywhere, on any device, 24/7.
                 </p>
               </div>
-              
+
               <div className="inline-block w-1/2 pr-1">
                 <a href="https://rentora.co.uk/" target="_new">
                   <img src={projectRentora1} alt="Link to Rentora Homepage" />
@@ -154,7 +157,7 @@ class BlogIndex extends React.Component {
                 Relocating can be stressful, but contacting everyone is easy using our free service.  Let <a href="https://transfermybills.com/" target="_new">transfermybills.com</a> notify existing utility, insurance and service providers of your impending move
                 </p>
               </div>
-              
+
               <div className="inline-block w-1/2 pr-1">
                 <a href="https://transfermybills.com/" target="_new">
                   <img src={projectTransferMyBills1} className="mx-auto" alt="Link to TransferMyBills Homepage" />
