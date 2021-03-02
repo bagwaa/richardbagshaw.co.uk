@@ -37,7 +37,7 @@ class BlogIndex extends React.Component {
                 both frontend as well as backend.
                 <br />
                 <br />
-                That includes everything from <a href="https://reactjs.org/">React</a> and <a href="https://vuejs.org/">Vue</a>, to <a href="https://www.php.net/">PHP</a> and <a href="https://laravel.com/">Laravel</a>.
+                That includes everything from <a href="https://laravel.com/">Laravel</a> and <a href="https://www.php.net/">PHP</a>, to <a href="https://reactjs.org/">React</a>, <a href="https://tailwindcss.com/">Tailwind</a> and <a href="https://vuejs.org/">Vue</a>.
                 <br />
                 <br />
                 You can contact me on <a href="mailto:richard@bagshaw.co.uk">richard@bagshaw.co.uk</a> or <a href="tel:07545 966 851">07545 966 851</a> to discuss your requirements further.
