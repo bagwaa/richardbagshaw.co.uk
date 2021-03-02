@@ -4,6 +4,8 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
+import projectTwindig1 from "../../static/twindig1.png"
+import projectTwindig2 from "../../static/twindig2.png"
 import projectRentora1 from "../../static/rentora1.png"
 import projectRentora2 from "../../static/rentora2.png"
 import projectTransferMyBills1 from "../../static/transfermybills.png"
@@ -123,12 +125,46 @@ class BlogIndex extends React.Component {
                 Previous Freelance Projects
               </h3>
             </div>
+
+            <div className="w-full px-6">
+              <div className="pb-3 mb-3 text-gray-800 border-b font-os">
+                <div className="mb-2 font-extrabold tracking-wide text-1xl md:text-1xl">
+                  Twindig.com (<a href="https://www.twindig.com/" target="_new">https://www.twindig.com</a>)
+                </div>
+                <p class="font-bold text-green-500">Technical Stack: PHP, Laravel, Livewire and Alpine</p>
+                <p class="mt-3">
+                  <a href="https://www.twindig.com/" target="_new">Twindig.com</a> is a new kind of property platform that will help you make smarter decisions at every stage of your property journey.
+                </p>
+                <p className="mt-3">
+                    Twindig lets you securely store your essential documents in one easy to access place and makes sure you never forget a renewal date when you use our clever reminders tool.
+                </p>
+                <p className="mt-3">
+                    Monitor your home and those that you follow. Discover valuable information about where you live, where you are going to live and where you’d love to live.
+                </p>
+                <p className="mt-3">
+                    Make buying and selling easier by bringing the whole market into reach. Twindig allows you and your agent to showcase your home giving potential buyers more reasons to buy it and gives you the confidence you need to sell quicker and move faster.
+                </p>
+              </div>
+
+              <div className="inline-block w-1/2 pr-1">
+                <a href="https://www.twindig.com/" target="_new">
+                  <img src={projectTwindig1} alt="Link to Twindig Homepage" />
+                </a>
+              </div>
+              <div className="inline-block w-1/2 pl-1">
+                <a href="https://rentora.co.uk/listings/in/london" target="_new">
+                  <img src={projectTwindig2} alt="Link to Twindig Homepage" />
+                </a>
+              </div>
+            </div>
+
             <div className="w-full px-6">
               <div className="pb-3 mb-3 text-gray-800 border-b font-os">
                 <div className="mb-2 font-extrabold tracking-wide text-1xl md:text-1xl">
                   Rentora (<a href="https://rentora.co.uk/" target="_new">https://rentora.co.uk</a>)
                 </div>
-                <p>
+                <p class="font-bold text-green-500">Technical Stack: PHP, Laravel, Vue, Json API</p>
+                <p class="mt-3">
                   <a href="https://rentora.co.uk/" target="_new">rentora.co.uk</a> makes it easy to list properties, find tenants, manage tenancies, collect rent and more.
                 </p>
                 <p className="mt-3">
@@ -153,7 +189,8 @@ class BlogIndex extends React.Component {
                 <div className="mb-2 font-extrabold tracking-wide text-1xl md:text-1xl">
                   TransferMyBills (<a href="https://transfermybills.com/" target="_new">https://transfermybills.com</a>)
                 </div>
-                <p>
+                <p class="font-bold text-green-500">Technical Stack: PHP, Laravel</p>
+                <p class="mt-3">
                 Relocating can be stressful, but contacting everyone is easy using our free service.  Let <a href="https://transfermybills.com/" target="_new">transfermybills.com</a> notify existing utility, insurance and service providers of your impending move
                 </p>
               </div>
