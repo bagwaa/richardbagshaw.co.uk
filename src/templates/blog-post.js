@@ -23,12 +23,12 @@ class BlogPostTemplate extends React.Component {
         />
 
         <div className="flex m-4">
-          <div className="container lg:max-w-4xl mx-auto">
+          <div className="container mx-auto lg:max-w-4xl">
             <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes} />
-            <h1 className="text-center text-4xl md:text-5xl font-medium text-gray-700 pt-6 leading-snug font-os tracking-wide">
+            <h1 className="pt-6 text-4xl font-medium leading-snug tracking-wide text-center text-gray-700 md:text-5xl font-os">
               {post.frontmatter.title}
             </h1>
-            <p className="text-center font-semibold uppercase font-os text-sm text-gray-500 py-6 tracking-wide">
+            <p className="py-6 text-sm font-semibold tracking-wide text-center text-gray-500 uppercase font-os">
               Published {post.frontmatter.date} By {post.frontmatter.author} -{" "}
               <a className="capitalize" href={post.frontmatter.gitHubPageLink}>
                 Edit page on Github
@@ -36,10 +36,10 @@ class BlogPostTemplate extends React.Component {
             </p>
             <Bio />
             <div
-              className="blog-content font-os text-lg text-gray-700 leading-relaxed px-3"
+              className="px-3 text-lg leading-relaxed text-gray-700 blog-content font-os"
               dangerouslySetInnerHTML={{ __html: post.html }}
             />
-            <ul className="flex justify-around py-8 font-os text-blue-700 font-bold">
+            <ul className="flex justify-around py-8 font-bold text-blue-700 font-os">
               <li>
                 {previous && (
                   <Link
@@ -64,51 +64,6 @@ class BlogPostTemplate extends React.Component {
               </li>
             </ul>
             <Bio />
-            <div className="signup min-w-full font-os p-8 rounded bg-gray-100 border">
-              <form
-                name="newsletter"
-                method="POST"
-                data-netlify="true"
-                data-netlify-honeypot="bot-field"
-                action="/success"
-              >
-                <input type="hidden" name="bot-field" />
-                <input type="hidden" name="form-name" value="newsletter" />
-                <h2 className="font-os text-2xl text-gray-700 font-semibold tracking-wide">
-                  Join the Newsletter
-                </h2>
-                <p className="font-os text-lg text-gray-800 leading-relaxed py-6">
-                  I write about PHP, JavaScript frameworks such as React and
-                  Vue, and programming in general, Keep up with my content and
-                  unsubscribe whenever.
-                  <span className="text-red-700 font-bold italic">
-                    Never any spam
-                  </span>
-                  ,{" "}
-                  <span className="text-green-700 font-bold italic">
-                    only useful content
-                  </span>
-                  .
-                </p>
-                <p>
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Email address"
-                    className="shadow appearance-none border rounded w-1/2 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                  />
-                  <button
-                    className="bg-blue-500 ml-2 w-24 hover:bg-blue-700 text-white text-sm font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                    type="submit"
-                  >
-                    Submit
-                  </button>
-                </p>
-              </form>
-            </div>
-            <div className="mt-8 py-10">
-               <Comments />
-            </div>
           </div>
         </div>
       </Layout>

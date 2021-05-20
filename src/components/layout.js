@@ -46,7 +46,7 @@ class Layout extends React.Component {
             {` `}
             <br />
             <br />
-            Contact me on <a href="mailto:richard@bagshaw.co.uk">richard@bagshaw.co.uk</a> or <a href="tel:07545 966 851">07545 966 851</a> to discuss your requirements further.
+            Please direct all enquiries to <a href="mailto:richard@bagshaw.co.uk">richard@bagshaw.co.uk</a> and I will respond as soon as possible.
           </span>
         </footer>
       </div>
