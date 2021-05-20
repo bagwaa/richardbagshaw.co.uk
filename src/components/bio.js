@@ -32,7 +32,7 @@ const Bio = () => {
 
   const { author, social } = data.site.siteMetadata
   return (
-    <div className="flex mb-8 border p-6 rounded-lg bg-gray-100">
+    <div className="flex p-6 mb-8 bg-gray-100 border rounded-lg">
       <div className="hidden md:block">
         <Image
           className="mr-4"
@@ -45,8 +45,8 @@ const Bio = () => {
       </div>
 
       <p className="font-os">
-        Written by <strong>{author}</strong> a php, javascript, vue and react
-        freelancer who lives and works in Nottingham, UK.
+        Written by <strong>{author}</strong> a programmer and web developer
+        working remotely from Nottingham, United Kingdom.
         {` `}
         <a href={`https://twitter.com/${social.twitter}`}>
           Follow me on Twitter

@@ -30,9 +30,9 @@ class BlogIndex extends React.Component {
               <p className="inline-block w-full pt-6 text-lg tracking-wide text-justify text-gray-800 font-os">
                 I'm a{" "}
                 <span className="italic font-bold text-green-600">
-                  freelance
+                  software developer
                 </span>{" "}
-                software developer based in Nottingham, UK. I like
+                based in Nottingham, UK. I like
                 to spend my free time learning everything I can about web development
                 both frontend and backend.
                 <br />
