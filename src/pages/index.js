@@ -40,7 +40,7 @@ class BlogIndex extends React.Component {
                 That includes technologies such as <a href="https://laravel.com/">Laravel</a>, <a href="https://www.php.net/">PHP</a>, <a href="https://laravel-livewire.com/">Laravel Livewire</a>, <a href="https://tailwindcss.com/">Tailwind CSS</a>, <a href="https://vuejs.org/">Vue</a> and <a href="https://github.com/alpinejs/alpine/">AlpineJS</a>
                 <br />
                 <br />
-                I am currently working in a fully remote role as a Senior Product Architect @ <a href="https://www.leadwithprimitive.com">leadwithprimitive.com</a> based in Lubbock, Texas.
+                I am currently working in a fully remote role as a web developer @ <a href="https://www.sans.org">The Sans Institute</a>.
               </p>
             </div>
 
