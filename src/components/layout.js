@@ -37,7 +37,7 @@ class Layout extends React.Component {
         <footer className="flex items-center justify-center h-64 mt-6 bg-gray-900">
           <span className="text-center text-gray-500 font-os">
             © {new Date().getFullYear()} Built by{" "}
-            <a href="https://twitter.com/bagwaa">@bagwaa</a> using
+            <a rel="me" href="https://phpc.social/@bagwaa">@bagwaa@phpc.social</a> using
             {` `}
             <a href="https://www.gatsbyjs.org">Gatsby</a>
             {` `}
