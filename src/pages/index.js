@@ -25,7 +25,7 @@ class BlogIndex extends React.Component {
           <div className="container mx-auto lg:max-w-4xl">
             <div className="w-full p-6">
               <h2 className="text-2xl font-bold tracking-wide text-gray-800 font-os md:text-4xl">
-                Hi, I'm Richard <span role="img" aria-label="waving">👋</span>
+                Hi, I'm <a rel="me" href="https://phpc.social/@bagwaa">Richard</a> <span role="img" aria-label="waving">👋</span>
               </h2>
               <p className="inline-block w-full pt-6 text-lg tracking-wide text-justify text-gray-800 font-os">
                 I'm a{" "}
